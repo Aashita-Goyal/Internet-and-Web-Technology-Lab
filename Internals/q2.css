@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+      margin: 100px;
+      margin-left: 350px;
+  }
+
+  #outerRectangle {
+    width: 800px;
+    height: 300px;
+    background-color: purple;
+    position: relative;
+  }
+  
+  #innerRectangle {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+  }
+
+  #rectangle{
+    background-color: purple;
+    margin-left: 200px;
+    width: 600px;
+    height: 200px;
+    margin-top: 200px;
+  }

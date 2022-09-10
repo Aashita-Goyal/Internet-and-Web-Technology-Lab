@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aashita Goyal (1913541) Exercise6-Q14</title>
+    <link rel="stylesheet" href="./Form_Validation.css" />
+  </head>
+
+  <body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+    <div class="box">
+      <form name="registration" onSubmit="formValidation();">
+        <ul>
+          <li><label for="userid">First Name:</label></li>
+          <li><input type="text" name="userid" size="12" /></li>
+          <li><label for="userid">Last Name:</label></li>
+          <li><input type="text" name="userid" size="12" /></li>
+
+          <li><label for="passid">Password:</label></li>
+          <li><input type="password" name="passid" size="12" /></li>
+          <li>
+            <label for="passid" id="label_length">Confirm Password:</label>
+          </li>
+          <li><input type="password" name="passid" size="12" /></li>
+          <li><label for="address">Address:</label></li>
+          <li><input type="text" name="address" size="50" /></li>
+          <li><label for="email">Email:</label></li>
+          <li><input type="email" name="email" size="50" /></li>
+          <li><label for="phone">Contact No:</label></li>
+          <li><input type="text" name="number" /></li>
+          <li><input type="submit" name="submit" value="Submit" /></li>
+        </ul>
+      </form>
+    </div>
+    <script src="./Form_Validation.js"></script>
+  </body>
+</html>

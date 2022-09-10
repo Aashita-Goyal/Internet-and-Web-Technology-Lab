@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+      background-color: black;
+  }
+  h1{
+      color: firebrick;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .temp-fields{
+      text-align: center;
+  }
+
+  .buttons{
+      margin-left: 580px;
+      margin-top: 40px;
+  }
+
+  .temp-box{
+      border-color: black;
+      background-color: yellowgreen;
+      width: 500px;
+      margin-left: 380px;
+      height: 280px;
+  }
+
+  .temp-fields{
+      padding-top: 30px;
+  }
+
+  p{
+      text-align: center;
+      padding-bottom: 20px;
+      background-color: silver;
+      width: 800px;
+      margin-left: 250px;
+      padding-top: 15px;
+      font-size: larger;
+      margin-bottom: 30px;
+  }

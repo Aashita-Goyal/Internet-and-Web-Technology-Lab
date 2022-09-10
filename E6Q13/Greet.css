@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: darkolivegreen;
+  }
+
+
+  #para{
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 60px;
+    color: darkkhaki;
+  }
+
+  #digClock{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: darkkhaki;
+  }
+
+  .box{
+    background-color: black;
+    width: 500px;
+    margin-left: 410px;
+  }

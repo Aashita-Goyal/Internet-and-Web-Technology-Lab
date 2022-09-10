@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aashita Goyal (1913541) Q1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: darkgray;
+        }
+
+        form {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        li {
+            margin: 5px;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        label {
+            width: 100px;
+        }
+
+        #label_length {
+            width: fit-content;
+        }
+
+        .box {
+            margin-left: 450px;
+            padding-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        form li {
+            list-style: none;
+            margin-bottom: 5px;
+            margin: 10px;
+        }
+
+        form ul li label {
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        form ul li input,
+        select,
+        span {
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        form textarea {
+            float: left;
+            width: 350px;
+            height: 150px;
+        }
+
+        [type="submit"] {
+            clear: left;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: 175px;
+            width: 80px;
+        }
+
+        #label_length {
+            margin-right: 20px;
+            width: 200px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+    <div class="box">
+        <form name="registration" onSubmit="formValidation();">
+            <ul>
+                <li><label for="firstname">First Name:</label></li>
+                <li><input type="text" name="firstname" size="12" /></li>
+
+                <li><label for="lastname">Last Name:</label></li>
+                <li><input type="text" name="lastname" size="12" /></li>
+
+                <li><label for="userid">User ID:</label></li>
+                <!--alphanumeric-->
+                <li><input type="text" name="userid" size="12" /></li>
+
+                <li><label for="passid">Password:</label></li>
+                <!--atleast one number and capital letter-->
+                <li><input type="password" name="passid1" size="12" /></li>
+
+                <li><label for="passid">Confirm Password:</label></li> <br>
+                <li><input type="password" name="passid2" size="12" id="label_length" /></li>
+
+
+                <li><label for="email">Email ID:</label></li>
+                <li><input type="email" name="email" size="50" /></li>
+
+                <li><label for="number">Contact No:</label></li>
+                <li><input type="text" name="number" /></li>
+
+                <li><label for="age">Age:</label></li>
+                <li><input type="text" name="age" size="50" /></li>
+
+                <li><input type="submit" name="submit" value="Submit" /></li>
+            </ul>
+        </form>
+    </div>
+
+    <script>
+        function formValidation() {
+            var fname = document.registration.firstname;
+            var lname = document.registration.lastname;
+            var uid = document.registration.userid;
+            var passid = document.registration.passid;
+            var uemail = document.registration.email;
+            var uphone = document.registration.number;
+            var uage = document.registration.age;
+
+            if (allLetter(fname)) {
+                if (allLetter(lname)) {
+                    if (userid_validation(uid, 5, 12)) {
+                        // if (alphanumeric(uid)) {
+                        if (passid_validation(passid, 7, 12)) {
+                            if (ValidateEmail(uemail)) {
+                                if (allnumeric(uphone)) {
+                                    if (allnumeric(uage)) {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                return false;
+            }
+
+
+
+            function userid_validation(uid, mx, my) {
+                var uid_len = uid.value.length;
+                if (uid_len == 0 || uid_len >= my || uid_len < mx) {
+                    alert("User Id should not be empty / length be between " + mx + " to " + my);
+                    uid.focus();
+                    return false;
+                    return false;
+
+                }
+                return true;
+                function alphanumeric(uid) {
+                    var letters = /^[0-9a-zA-Z]+$/;
+                    if (uid.value.match(letters)) {
+                        return true;
+                    }
+                    else {
+                        alert('User ID must have alphanumeric characters only');
+                        uid.focus();
+                        return false;
+                    }
+                    return true;
+                }
+
+            }
+
+
+            function allLetter(fname) {
+                var letters = /^[A-Za-z]+$/;
+                if (fname.value.match(letters)) {
+                    return true;
+                }
+                else {
+                    alert('Username must have alphabet characters only');
+                    fname.focus();
+                    return false;
+                }
+            }
+
+            function allLetter(lname) {
+                var letters = /^[A-Za-z]+$/;
+                if (lname.value.match(letters)) {
+                    return true;
+                }
+                else {
+                    alert('Username must have alphabet characters only');
+                    lname.focus();
+                    return false;
+                }
+            }
+
+
+            // function passid_validation(passid, mx, my) {
+            //     var passid_len = passid.value.length;
+            //     if (passid_len == 0 || passid_len >= my || passid_len < mx) {
+            //         alert("Password should not be empty / length be between " + mx + " to " + my);
+            //         passid.focus();
+            //         return false;
+            //     }
+            //     return true;
+            // }
+
+            function passid_validation(passid, mx, my) {
+               //xxx var passw = /^(?=.\d)(?=.[a-z])(?=.*[A-Z]).{6,20}$/;
+                var passw = /^(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8, 20}$/;
+                if (inputtxt.value.match(passid)) {
+                    alert('Inorrect, try another...');
+                    return true;
+                }
+                else {
+                    alert('Wrong...!');
+                    return false;
+                    
+                }
+                return true;
+                var passid_len = passid.value.length;
+
+                    if (passid_len == 0 || passid_len >= my || passid_len < mx) {
+                        alert("Password should not be empty / length be between " + mx + " to " + my);
+                        passid.focus();
+                        return false;
+                    }
+                    return true;
+            }
+
+
+
+
+
+                function allnumeric(uphone) {
+                    var numbers = /^[0-9]+$/;
+                    if (uphone.value.match(numbers)) {
+                        return true;
+                    }
+                    else {
+                        alert('phone code must have numeric characters only');
+                        uphone.focus();
+                        return false;
+                    }
+                }
+
+                function allnumeric(uage) {
+                    var numbers = /^[0-9]+$/;
+                    if (uage.value.match(numbers)) {
+                        return true;
+                    }
+                    else {
+                        alert('phone code must have numeric characters only');
+                        uage.focus();
+                        return false;
+                    }
+                }
+
+                function ValidateEmail(uemail) {
+                    var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+                    if (uemail.value.match(mailformat)) {
+                        return true;
+                    }
+                    else {
+                        alert("You have entered an invalid email address!");
+                        uemail.focus();
+                        return false;
+                    }
+                    if (fname.value.length <= 0) {
+                        alert("Name is required");
+                        fname.focus();
+                        return false;
+                    }
+                    if (lname.value.length <= 0) {
+                        alert("Last Name is required");
+                        lname.focus();
+                        return false;
+                    }
+
+                    else {
+                        alert('Form Succesfully Submitted');
+                        window.location.reload();
+                        return true;
+                    }
+                }
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali kedia 1913546 que 13</title>
+</head>
+<body>
+      <h1 id="para" onclick="greetings()"></h1>
+    <script>
+        let fname = window.prompt("enter first name");
+        let lname = window.prompt("enter last name");
+        var now = new Date();
+        var time = now.getHours();
+        gr= document.getElementById('para');
+        gr.addEventListener('click',function run()
+        {
+            gr.style.display='none';
+        })
+
+        if(time<12)
+        {
+            gr.innerHTML = "Good Morning "+fname+" "+lname;	
+        }
+       else if(time==12)
+        {
+            gr.innerHTML = "Good Noon "+fname+" "+lname;	
+        }
+        else if(time>12)
+        {
+            time=time-12;
+            if(time<6)
+            {
+                gr.innerHTML = "Good Afternoon "+fname+" "+lname;	
+            }
+            else
+            {
+                gr.innerHTML = "Good Evening "+fname+" "+lname;	
+            }
+        }
+    </script>
+</body>
+</html>

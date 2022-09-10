@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Greeting Aashita Goyal (1913541)</title>
+    </head>
+<body>
+    <script type="text/javascript">
+        document.write(
+            "<center><font size=+5 style='color: purple;'>"
+        );
+        var name = window. prompt("Enter your name: "); 
+        var day = new Date();
+        var hour = day.getHours();
+        if (hour >= 6 && hour < 12) {
+            document.write("Good Morning " +  name + " !");
+        } else if (hour == 12) {
+            document.write("Good Noon " +  name + " !");
+        } else if (hour >= 12 && hour <= 17) {
+            document.write("Good Afternoon " +  name + " !");
+        } else if (hour >= 18 && hour <= 21) {
+            document.write("Good Evening " +  name + " !");
+        } else {
+            document.write("Good Night " +  name + " !");
+        }
+        document.write(
+            "</font></center>"
+        );
+    </script>
+</body>
+</html> 

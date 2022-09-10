@@ -1,0 +1,60 @@
+body{
+	background-color:lightBlue;
+	 background-size:cover;
+}
+#header{
+	padding: 2px;
+	background-color:LightSeaGreen;
+	color:white;
+	font-size:30px;
+	text-align:center;
+}
+	
+.Coloumn{
+	content:"";
+	display:flex;
+	clear:both;
+
+}
+
+
+#col1{
+	float:left;
+	 height: 300px;
+	 width:600px;
+	 padding:0 10px;
+background-color:magenta;
+border:5px  solid yellow;
+margin:5px;
+justify-content:center;
+}
+#col1::first-letter{
+	font-size:35px;
+	font-weight:700;
+	
+}
+#col1:hover{
+	background-color:red;
+	font-size:20px;
+	color:white;
+}
+
+
+#col2{
+	float:left;
+	 height: 300px;
+	 width:600px;
+	 padding:0 10px;
+	background-color:green;
+	border:5px  solid yellow;
+	margin:5px;
+	justify-content:center;
+}
+
+#col2:hover{
+	background-color:purple;
+	font-size:20px;
+	color:white;
+}
+
+	 

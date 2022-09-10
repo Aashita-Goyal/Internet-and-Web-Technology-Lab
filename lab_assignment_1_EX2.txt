@@ -1,0 +1,24 @@
+<!docttype>
+<html>
+   <head>
+      <title> Lab Assignment 1 EX2 </title>
+	</head>
+    <body background = "C:\Users\Jain-IT\Documents\IWT L\images\30.jpg" >
+
+	 
+	     <a href="#i39"><image src = "C:\Users\Jain-IT\Documents\IWT L\images\39.jpg"  height="80" width="80"></a>
+	     <a href="#i14"><image src = "C:\Users\Jain-IT\Documents\IWT L\images\14.jpg"  height="80" width="80"></a>
+		 <a href="#i13"><image src = "C:\Users\Jain-IT\Documents\IWT L\images\13.jpg"  height="80" width="80"></a>
+         <a href="#i31"><image src = "C:\Users\Jain-IT\Documents\IWT L\images\31.jpg"  height="80" width="80"></a>
+		 <hr>
+	  
+	     <image id="i39" src = "C:\Users\Jain-IT\Documents\IWT L\images\39.jpg"  height="100%" width="100%">
+		 <hr>
+		 <image id="i14" src = "C:\Users\Jain-IT\Documents\IWT L\images\14.jpg"  height="100%" width="100%">
+		 <hr>
+		 <image id="i13" src = "C:\Users\Jain-IT\Documents\IWT L\images\13.jpg"  height="100%" width="100%">
+		 <hr>
+		 <image id="i31" src = "C:\Users\Jain-IT\Documents\IWT L\images\31.jpg"  height="100%" width="100%">	 
+	  
+	</body>
+</html>	

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.heading{
+    border-color: beige;
+    color:brown;
+    font-size: 50px;
+    margin-left: 470px;
+}
+
+.heading:hover{
+    width: 340px;
+    color: black;
+    margin-left: 470px;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+ 
+.paragraphContainer{
+    display: flex;
+    color: bisque;
+}
+
+.paragraphContainer:hover{
+    /*background-color:olive;
+    background-color:darkgoldenrod;*/
+    background-color: brown;
+}
+
+.paragraph{
+    padding: 20px;
+    color: bisque;
+}
+
+.paragraph::first-letter{
+	font-size:35px;
+	font-weight:700;
+	
+}
+
+#para1:hover{
+	font-size:120%;
+	color:black;
+    background-color: bisque;
+}
+
+#para2:hover{
+	font-size:120%;
+	color:black;
+    background-color: bisque;
+}
+
+

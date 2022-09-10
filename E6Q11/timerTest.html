@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANJALI KEDIA 1913546 Ques 11</title>
+    <style>
+        #counter
+        {
+            font-size: 30px;
+            border: 1px solid black;
+            width: 50px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2 id="counter">1</h2>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <script>
+        var count=0;
+        function counter()
+        {
+            d=document.getElementById('counter')
+            d.innerHTML= ++count;
+
+        }
+        function start()
+        {
+            interval = setInterval(counter,1000);
+        }
+        function stop()
+        {
+            clearInterval(interval);
+            count=0;
+        }
+    </script>
+</body>
+</html>

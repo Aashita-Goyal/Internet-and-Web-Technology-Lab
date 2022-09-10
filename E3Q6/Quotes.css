@@ -1,0 +1,133 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* To Box Model */
+
+
+
+  /*  background-image:
+    linear-gradient(to bottom, rgba(33, 159, 148, 0.52), rgba(232, 232, 166, 0.73)),
+    url('../images/bgs/black_denim.png'); */
+body{
+    background-image: 
+    linear-gradient(to right,  rgba(34, 34, 53, 0), rgba(220, 202, 45, 0.92)),
+    url('../images/bgs/black_paper.png'); 
+
+
+}*/
+
+.quote__container{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+}
+
+.quote__text{
+    padding: 12px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 53px;
+    padding-left: 40px;
+}
+
+.quote__images__container{
+    width: 65%;
+    padding-left: 300px;
+}
+
+.quote__images__row__one,
+.quote__images__row__two{
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+
+.quote__images__row__one{
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+
+
+    .quote__image__1,
+    .quote__image__4{
+        width: 150%;
+        height: 190px;
+    }
+    
+    .quote__image__2,
+    .quote__image__3{
+        width: 170%;
+        height: 230px;
+
+    }
+    
+    .quote__1,
+    .quote__2,
+    .quote__3,
+    .quote__4{
+        width: 100%;
+        height: 100%;
+    }
+
+    .quote__1{
+        background-image: url('../images/img9.jpg');
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+       /* position: absolute;
+        height: 180px;
+        width: 377px;
+        top: 30;
+        bottom: 40;*/
+    }
+
+    .quote__2{
+        background-image: url('../images/img10.jpg');
+        padding-bottom: 0;
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+        margin-left: 20px;
+    }
+
+    .quote__3{
+        background-image: url('../images/img22.jpg'); 
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+    }
+
+    .quote__4{
+        background-image: url('../images/img30.jpg'); 
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+        margin-left: 20px;
+    }
+
+    .quote__first{
+        color: white;
+        padding-top: 30px;
+        padding-left: 50px;
+
+    }
+
+    .quote__second{
+        color: white;
+        padding-left: 130px;
+        padding-top: 70px;
+    }
+
+    .quote__third{
+        color: white;
+        padding-top: 25px;
+        padding-left: 245px;
+    }
+
+    .quote__fourth{
+        color: white;
+        padding-top: 30px;
+        padding-left: 70px;
+    }
+
+
+   

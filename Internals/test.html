@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+.bg_rectangle {
+    background-color: red;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+}
+.rectangle {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    transition-duration: 4s;
+    transition: left 1.5s ease-in-out
+}
+
+
+/* .rectangle.active {
+    left: calc(100vw - 5%);
+    transition: left 1.5s ease-in-out
+} */
+</style>
+<body>
+
+<h2>My Heading</h2>
+
+<p>Click the rectangle to see it move to the right - click it again to more it back to the left.</p>
+<hr/>
+<div class="bg_rectangle">
+<div class="rectangle"></div>
+</div>
+
+<p id="demo"></p>
+
+<script src="./test.js"></script>
+
+</body>
+</html>

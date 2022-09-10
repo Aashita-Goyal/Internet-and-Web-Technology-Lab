@@ -1,0 +1,27 @@
+<!docttype>
+<html>
+   <head>
+      <title> Lab Assignment 1 EX1 </title>
+	</head>
+    <body background = "C:\Users\Jain-IT\Documents\IWT L\images\14.jpg" >
+	<table border="1">
+	 <tr>
+	     <td> <a href="C:\Users\Jain-IT\Documents\IWT L\images\15.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\15.jpg"  height=500 width=500></a></td>
+	     <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\2.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\2.jpg"  height=500 width=500></a></td>
+		 <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\16.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\16.jpg"  height=500 width=500></a></td>
+	</tr>	 
+	  <tr>
+	     <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\24.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\24.jpg"  height=500 width=500></a></td>
+		  <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\28.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\28.jpg"  height=500 width=500></a></td>
+		  <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\19.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\19.jpg"  height=500 width=500></a></td>
+	   
+		</tr>  		
+	  <tr>
+	     <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\27.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\27.jpg" height=500 width=500></a></td>
+		 <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\25.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\25.jpg"  height=500 width=500></a></td>
+		 <td><a href="C:\Users\Jain-IT\Documents\IWT L\images\26.jpg" target=_blank><image src = "C:\Users\Jain-IT\Documents\IWT L\images\26.jpg"  height=500 width=500></a></td>
+	
+	</tr>
+	</table>
+	</body>
+</html>	

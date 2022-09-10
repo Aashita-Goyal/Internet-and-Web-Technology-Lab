@@ -1,0 +1,67 @@
+.quote__container{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+}
+
+.quote__text{
+    padding: 12px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 53px;
+    padding-left: 40px;
+}
+
+.quote__images__container{
+    width: 6%;
+    padding-left: 50px;
+}
+
+.quote__images__row__one,
+.quote__images__row__two{
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+
+.quote__images__row__one{
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+
+
+    .quote__image__1,
+    .quote__image__4{
+        width: 200%;
+        height: 180px;
+    }
+    
+    .quote__image__2,
+    .quote__image__3{
+        width: 120%;
+        height: 230px;
+
+    }
+    
+    .quote__1,
+    .quote__2,
+    .quote__3,
+    .quote__4{
+        width: 100%;
+        height: 100%;
+    }
+
+    .quote__1{
+        background-image: url('../images/img2.jpg'); 
+    }
+
+    .quote__2{
+        background-image: url('../images/img2.jpg'); 
+    }
+
+    .quote__3{
+        background-image: url('../images/img2.jpg'); 
+    }
+
+    .quote__4{
+        background-image: url('../images/img2.jpg'); 
+    }
